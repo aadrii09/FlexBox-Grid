@@ -1,0 +1,79 @@
+body{
+    background-image: url("./img/background.png");
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: greenyellow;
+}
+#intro{
+    display: flex;
+}
+main h1{
+    text-align: center;
+}
+.card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        margin: 0 auto;
+        background: linear-gradient(rgb(245, 215, 189) 30%, rgb(255, 255, 255) 30%);
+        box-shadow: 0 0 25px rgb(129, 125, 0);
+        border-radius: 10px;
+        padding: 50px 16px;
+        margin-bottom: 30px;
+        
+    }
+    #sectionCard{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .foroCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        margin: 0 auto;
+        box-shadow: 0 0 25px rgb(128, 128, 0);
+        border-radius: 10px;
+        padding: auto;
+        margin-bottom: 30px;
+    }
+    .textarea{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto
+        ;
+    }
+    .container {
+        display: flex;
+        flex-direction: column; 
+      }
+      
+      #miTextarea {
+        flex-grow: 1; 
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      #button{
+        display: flex ;
+        justify-content: flex-end;
+      }
+      #logos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .logo{
+        width: 20px;
+        padding-top: 10px;
+      }
+      #derechos{
+        display: flex;
+        justify-content: center;
+      }
