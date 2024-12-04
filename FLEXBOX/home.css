@@ -1,31 +1,40 @@
+/* Se añade un fondo con una imagen y configuración para cubrir toda la pantalla, dando tipografía general y un cursor personalizado */
 body{
-    background-image: url("./img/background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: monospace;
-    cursor: url('./img/cursor.cur'), auto;
+  background-image: url("./img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: monospace;
+  cursor: url('./img/cursor.cur'), auto;
 }
+
+/* Cabecera, estilo de distribución y color de fondo */
 header{
-    display: flex;
-    justify-content: space-between;
-    background-color: #FFEA6E ;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFEA6E ;
 }
+
+/* Estilo de texto para el encabezado, tamaño, color, sombra y espaciado */
 .head{
-      font-size: 40px;
-      text-transform: uppercase; 
-      color: #B67C00; 
-      text-shadow: 
-        -2px -2px 0 #ffffff, 
-        2px -2px 0 #ffffff,
-        -2px 2px 0 #fefefe,  
-        2px 2px 0 #ffffff;  
-      letter-spacing: 3px; 
-      text-decoration: none;
+  font-size: 40px;
+  text-transform: uppercase; 
+  color: #B67C00; 
+  text-shadow: 
+      -2px -2px 0 #ffffff, 
+      2px -2px 0 #ffffff,
+      -2px 2px 0 #fefefe,  
+      2px 2px 0 #ffffff;  
+  letter-spacing: 3px; 
+  text-decoration: none;
 }
+
+/* Cambio de color y cursor al pasar el mouse por encima del encabezado */
 .head:hover{
   color: darkred;
   cursor: url('./img/cursor2.png'), auto;
 }
+
+/* Sección de introducción, estilo de distribución, fondo y bordes */
 #introSection {
   display: flex;
   justify-content: space-between;
@@ -39,154 +48,207 @@ header{
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Artículo de introducción, max-width para ajustarse al contenedor */
 #introArticle{
   max-width: 70%;
 }
+
+/* Estilos para el encabezado dentro del artículo */
 #introArticle h1 {
   font-size: 1.8rem;
   margin-bottom: 16px;
   color: #333;
 }
+
+/* Estilos para los párrafos dentro del artículo */
 #introArticle p {
   font-size: 1rem;
   color: #555;
   line-height: 1.6;
 }
+
+/* Imagen de la introducción con tamaño y bordes redondeados */
 #introImg {
   width: 150px;
   height: auto;
   border-radius: 8px;
 }
-main h1{
-    text-align: center;
-}
-.card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 300px;
-        margin: 0 auto;
-        background: linear-gradient(#FFCA2E 30%, #FFEA6E 30%);
-        box-shadow: 0 0 25px rgb(35, 34, 0);
-        border-radius: 10px;
-        padding: 50px 16px;
-        margin-bottom: 30px;
-        border-color: black;
-        border: 1px solid #ddd;
-    }
-    #sectionCard{
-        display: flex;
-        flex-wrap: wrap;
-    }
-      #logos{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-      }
-      .logo{
-        width: 20px;
-        padding-top: 10px;
-        margin-left: 20px;
-      }
-      #derechos{
-        display: flex;
-        justify-content: center;
-      }
-    footer{
-      background-color: #FFEA6E ;
-      margin-top: 15px;
 
-    }
-      .img{
-        width: 150px;
-        border-radius: 50%;
-        margin-bottom: 16px;
-      }
-      .cardTitle{
-        font-size: 1.25rem;
-        margin: 8px 0;
-      }
-      .card-description {
-        font-size: 0.9rem;
-        color: #666;
-        margin: 8px 0;
-      }
-      .card-footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        margin-top: 16px;
-      }
-      .star{
-        content: "\2605";
-        font-size: 0.9rem;
-        color: #444;
-    }
-    .button{
-      background-color:#FFF7B6 ;
-      color: rgb(0, 0, 0);
-      border: none;
-      padding: 8px 16px;
-      border-radius: 4px;
-    }
-    .button:hover{
-      background-color:#FFCA2E ;
-      cursor: url('./img/cursor2.png'), auto;
-      
-    }
-    .foroCard{
-      display: flex;
-      width: 75%;
-      margin: 0 auto;
-      box-shadow: 0 0 25px rgb(58, 58, 0);
-      border-radius: 10px;
-      margin-bottom: 30px;
-      border: 1px solid #ddd;
-      background-color: rgb(255, 234, 110, 0.8) ;
-  }
-    .foroDiv{
-      padding-left: 20px;
-    }
-    section > h1{
-      text-align: center;
-    }
-    #form{
-      display: flex;
-      flex-direction: column;
-     
-    }
-    .container {
-        display: flex;
-        flex-direction: row; 
-        width: 100%;
-        justify-content: center;
-      }
-      #miTextarea { 
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        width: 70%;
-        background-color:rgb(255, 247, 182) ;
-      }
-      h4{
-        display: flex;
-        margin-left: 12%;
-      }
-      #submit{
-        height: 50px;
-        width: auto;
-        background-color:rgb(255, 247, 182) ;
-        align-items: center;
-        margin-left: 1%;
-        align-self: center;
-        border-radius: 10%;
-      }
-      #submit:hover{
-        background-color:#FFCA2E ;
-        cursor: url('./img/cursor2.png'), auto;
-      }
-     .a:hover{
-      cursor: url('./img/cursor2.png'), auto;
-     }
+/* Estilo del encabezado principal */
+main h1{
+  text-align: center;
+}
+
+/* Tarjetas con un fondo de gradiente, sombra y bordes */
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  background: linear-gradient(#FFCA2E 30%, #FFEA6E 30%);
+  box-shadow: 0 0 25px rgb(35, 34, 0);
+  border-radius: 10px;
+  padding: 50px 16px;
+  margin-bottom: 30px;
+  border-color: black;
+  border: 1px solid #ddd;
+}
+
+/* Sección de tarjetas, distribución flexible */
+#sectionCard{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilos para los logos dentro de la sección */
+#logos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo de los logos, tamaño y espaciado */
+.logo{
+  width: 20px;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+
+/* Derechos de autor, centrado en el pie de página */
+#derechos{
+  display: flex;
+  justify-content: center;
+}
+
+/* Pie de página, fondo y margen superior */
+footer{
+  background-color: #FFEA6E ;
+  margin-top: 15px;
+}
+
+/* Estilo para imágenes dentro del pie de página */
+.img{
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+/* Título de las tarjetas */
+.cardTitle{
+  font-size: 1.25rem;
+  margin: 8px 0;
+}
+
+/* Descripción de las tarjetas */
+.card-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 8px 0;
+}
+
+/* Pie de las tarjetas, distribución de los elementos */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 16px;
+}
+
+/* Estilo de las estrellas dentro de las tarjetas */
+.star{
+  content: "\2605";
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Estilo del botón con color de fondo y bordes */
+.button{
+  background-color:#FFF7B6 ;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+/* Efecto hover para el botón */
+.button:hover{
+  background-color:#FFCA2E ;
+  cursor: url('./img/cursor2.png'), auto;
+}
+
+/* Estilo de las tarjetas del foro */
+.foroCard{
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 0 25px rgb(58, 58, 0);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  background-color: rgb(255, 234, 110, 0.8) ;
+}
+
+/* Estilo del contenedor dentro del foro */
+.foroDiv{
+  padding-left: 20px;
+}
+
+/* Estilo del encabezado dentro de las secciones */
+section > h1{
+  text-align: center;
+}
+
+/* Estilo del formulario, distribución en columna */
+#form{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenedor general con distribución en fila */
+.container {
+  display: flex;
+  flex-direction: row; 
+  width: 100%;
+  justify-content: center;
+}
+
+/* Estilo del textarea dentro del formulario */
+#miTextarea { 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70%;
+  background-color:rgb(255, 247, 182) ;
+}
+
+/* Estilo del encabezado h4 dentro del formulario */
+h4{
+  display: flex;
+  margin-left: 12%;
+}
+
+/* Estilo del botón de envío */
+#submit{
+  height: 50px;
+  width: auto;
+  background-color:rgb(255, 247, 182) ;
+  align-items: center;
+  margin-left: 1%;
+  align-self: center;
+  border-radius: 10%;
+}
+
+/* Efecto hover para el botón de envío */
+#submit:hover{
+  background-color:#FFCA2E ;
+  cursor: url('./img/cursor2.png'), auto;
+}
+
+/* Estilo para enlaces con efecto hover */
+.a:hover{
+  cursor: url('./img/cursor2.png'), auto;
+}
