@@ -3,8 +3,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     font-family: monospace;
+    cursor: url('./img/cursor.cur'), auto;
 }
-
 header{
     display: flex;
     justify-content: space-between;
@@ -24,7 +24,7 @@ header{
 }
 .head:hover{
   color: darkred;
-  cursor: url('./img/cursor_rosquilla_transparent.cur'), auto;
+  cursor: url('./img/cursor2.png'), auto;
 }
 #introSection {
   display: flex;
@@ -78,36 +78,6 @@ main h1{
         display: flex;
         flex-wrap: wrap;
     }
-    form{
-      display: flex;
-      flex-direction: column;
-    }
-    .container {
-      display: flex;
-        flex-direction: row; 
-        align-items: center;
-
-      }
-      #miTextarea { 
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        width: 100%;
-        background-color:rgb(255, 247, 182) ;
-      }
-      #submit{
-        justify-content: flex-end;
-        height: 50px;
-        width: auto;
-        background-color:rgb(255, 247, 182) ;
-        align-items: center;
-        margin-left: 1%;
-
-      }
-      #submit:hover{
-        background-color:#FFCA2E ;
-        cursor: url('./img/cursor_rosquilla_transparent.cur'), auto;
-      }
       #logos{
         display: flex;
         flex-direction: row;
@@ -117,6 +87,7 @@ main h1{
       .logo{
         width: 20px;
         padding-top: 10px;
+        margin-left: 20px;
       }
       #derechos{
         display: flex;
@@ -163,7 +134,8 @@ main h1{
     }
     .button:hover{
       background-color:#FFCA2E ;
-      cursor: url('./img/cursor_rosquilla_transparent.cur'), auto;
+      cursor: url('./img/cursor2.png'), auto;
+      
     }
     .foroCard{
       display: flex;
@@ -171,15 +143,51 @@ main h1{
       margin: 0 auto;
       box-shadow: 0 0 25px rgb(58, 58, 0);
       border-radius: 10px;
-      padding: auto;
       margin-bottom: 30px;
       border: 1px solid #ddd;
       background-color: rgb(255, 234, 110, 0.8) ;
   }
     .foroDiv{
-      justify-content: flex-end;
       padding-left: 20px;
     }
     section > h1{
       text-align: center;
     }
+    #form{
+      display: flex;
+      flex-direction: column;
+     
+    }
+    .container {
+        display: flex;
+        flex-direction: row; 
+        width: 100%;
+        justify-content: center;
+      }
+      #miTextarea { 
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 70%;
+        background-color:rgb(255, 247, 182) ;
+      }
+      h4{
+        display: flex;
+        margin-left: 12%;
+      }
+      #submit{
+        height: 50px;
+        width: auto;
+        background-color:rgb(255, 247, 182) ;
+        align-items: center;
+        margin-left: 1%;
+        align-self: center;
+        border-radius: 10%;
+      }
+      #submit:hover{
+        background-color:#FFCA2E ;
+        cursor: url('./img/cursor2.png'), auto;
+      }
+     .a:hover{
+      cursor: url('./img/cursor2.png'), auto;
+     }
