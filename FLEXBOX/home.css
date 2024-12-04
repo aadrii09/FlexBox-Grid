@@ -19,12 +19,13 @@ main h1{
         align-items: center;
         width: 300px;
         margin: 0 auto;
-        background: linear-gradient(rgb(245, 215, 189) 30%, rgb(255, 255, 255) 30%);
-        box-shadow: 0 0 25px rgb(129, 125, 0);
+        background: linear-gradient(#FFCA2E 30%, #FFEA6E 30%);
+        box-shadow: 0 0 25px rgb(35, 34, 0);
         border-radius: 10px;
         padding: 50px 16px;
         margin-bottom: 30px;
-        
+        border-color: black;
+        border: 4px;
     }
     #sectionCard{
         display: flex;
@@ -40,28 +41,38 @@ main h1{
         border-radius: 10px;
         padding: auto;
         margin-bottom: 30px;
+        /* background-color: rgb(255, 247, 182, 0.8) ; */
+        background-color: rgb(255, 234, 110, 0.8) ;
     }
-    .textarea{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: auto
-        ;
+    form{
+      display: flex;
+      flex-direction: column;
     }
     .container {
-        display: flex;
-        flex-direction: column; 
+      display: flex;
+        flex-direction: row; 
+        align-items: center;
+
       }
-      
-      #miTextarea {
-        flex-grow: 1; 
+      #miTextarea { 
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
+        width: 100%;
+        background-color:rgb(255, 247, 182) ;
       }
-      #button{
-        display: flex ;
+      #submit{
         justify-content: flex-end;
+        height: 50px;
+        width: auto;
+        background-color:rgb(255, 247, 182) ;
+        align-items: center;
+        margin-left: 1%;
+
+      }
+      #submit:hover{
+        background-color:#FFCA2E ;
+        cursor: pointer;
       }
       #logos{
         display: flex;
@@ -76,4 +87,22 @@ main h1{
       #derechos{
         display: flex;
         justify-content: center;
+      }
+    footer{
+      background-color: greenyellow;
+      margin-top: 15px;
+
+    }
+      .star{
+          content: "\2605";
+      }
+      .img{
+        border-image: 10px;
+      }
+      .button{
+        background-color:#FFF7B6 ;
+      }
+      .button:hover{
+        background-color:#FFCA2E ;
+        cursor: pointer;
       }
