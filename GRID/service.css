@@ -1,0 +1,44 @@
+body{
+    background-image: url("./img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: monospace;
+    cursor: url('./img/cursor.cur'), auto;
+}
+.card{
+    display: grid;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    background: linear-gradient(#FFCA2E 30%, #FFEA6E 30%);
+    box-shadow: 0 0 25px rgb(35, 34, 0);
+    border-radius: 10px;
+    padding: 50px 16px;
+    margin-bottom: 30px;
+    border-color: black;
+    border: 1px solid #ddd;
+}
+#sectionCard{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-items: center;
+}
+.img{
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    justify-self: center;
+  }
+  .cardTitle{
+    font-size: 1.25rem;
+    margin: 8px 0;
+  }
+  .card-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 8px 0;
+  }
+  main > h1{
+    text-align: center;
+  }
+
