@@ -28,7 +28,7 @@ header{
   text-decoration: none;
 }
 
-/* Cambio de color y cursor al pasar el mouse por encima del encabezado */
+/* Cambio de color y cursor al pasar el raton por encima del encabezado */
 .head:hover{
   color: darkred;
   cursor: url('./img/cursor2.png'), auto;
