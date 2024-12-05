@@ -49,6 +49,10 @@ header{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+#heroImg{
+  width: 50%;
+}
+
 /* Artículo de introducción, max-width para ajustarse al contenedor */
 #introArticle{
   max-width: 70%;

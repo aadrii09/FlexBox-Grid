@@ -41,4 +41,41 @@ body{
   main > h1{
     text-align: center;
   }
-
+  #logos{
+    display: gird;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo{
+    width: 20px;
+    padding-top: 10px;
+    margin-left: 20px;
+  }
+  #derechos{
+    text-align: center;
+  }
+  footer{
+  background-color: #FFEA6E ;
+  margin-top: 15px;
+}
+section > h1{
+  text-align: center;
+}
+.parent{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 25%;
+}
+.imgTestimonios{
+  grid-row-end:auto;
+  width: 30px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.p{
+  grid-row-start: auto;
+}
+.artTesti{
+  display: grid;
+justify-content: center;
+}
