@@ -16,7 +16,7 @@ header{
 
 /* Estilo de texto para el encabezado, tamaño, color, sombra y espaciado */
 .head{
-  font-size: 40px;
+  font-size: 2.5rem;
   text-transform: uppercase; 
   color: #B67C00; 
   text-shadow: 
@@ -26,6 +26,7 @@ header{
       2px 2px 0 #ffffff;  
   letter-spacing: 3px; 
   text-decoration: none;
+  margin: 5px;
 }
 
 /* Cambio de color y cursor al pasar el raton por encima del encabezado */

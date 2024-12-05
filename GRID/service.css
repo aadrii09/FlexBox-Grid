@@ -6,27 +6,21 @@ body{
     cursor: url('./img/cursor.cur'), auto;
 }
 .card{
-    display: grid;
-    align-items: center;
-    width: 20rem;
-    margin: 0 auto;
-    background: linear-gradient(#FFCA2E 30%, #FFEA6E 30%);
-    box-shadow: 0 0 25px rgb(35, 34, 0);
-    border-radius: 10px;
-    padding: 50px 16px;
-    margin-bottom: 30px;
-    border-color: black;
-    border: 1px solid #ddd;
-    grid-column-end: span 4;
+  text-align: center;
+  background: linear-gradient(#FFCA2E 30%, #FFEA6E 30%);
+  box-shadow: 0 0 25px rgb(35, 34, 0);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 30px;
+  border-color: black;
+  border: 1px solid #ddd;
 }
-#sectionCard{
-    display: grid;
-    grid-template-columns: repeat(12, minmax(18.75rem, 1fr));
-    grid-column: 2/span 12;
-    justify-items: center;
-    gap: 20px ;
-    /* max-width: 1500px; */
-    justify-self: center;
+.sectionCard{
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 .img{
     width: 50%;
@@ -47,7 +41,7 @@ body{
     text-align: center;
   }
   #logos{
-    margin-left: 45.5vw;
+    text-align: center;
   }
   .logo{
     width: 20px;
@@ -87,7 +81,6 @@ section > h1{
   grid-template-areas: 'imagen texto .';
   grid-template-columns: 3vw 1fr 1fr;
   gap: 1em;
-  width: 40vw;
 }
 
 #secttestimonios {
@@ -95,13 +88,26 @@ section > h1{
   justify-items: center;
 }
 /* cabecera */
-header{
+.navbar {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #FFEA6E ;
-
+  grid-template-columns: 1fr auto; 
+  align-items: center; 
+  margin: 5px;
+  background-color: #FFEA6E ; 
+  
 }
-.head{
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 20px; 
+  display: inline-block;
+}
+a{
+  text-decoration: none;
   font-size: 40px;
   text-transform: uppercase; 
   color: #B67C00; 
@@ -113,10 +119,7 @@ header{
   letter-spacing: 3px; 
   text-decoration: none;
 }
-.head:hover{
+a:hover{
   color: darkred;
   cursor: url('./img/cursor2.png'), auto;
-}
-#navGrid{
-  margin-left:10vw;
 }
