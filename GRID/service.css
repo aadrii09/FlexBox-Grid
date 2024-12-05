@@ -8,7 +8,7 @@ body{
 .card{
     display: grid;
     align-items: center;
-    width: 300px;
+    width: 20rem;
     margin: 0 auto;
     background: linear-gradient(#FFCA2E 30%, #FFEA6E 30%);
     box-shadow: 0 0 25px rgb(35, 34, 0);
@@ -17,14 +17,19 @@ body{
     margin-bottom: 30px;
     border-color: black;
     border: 1px solid #ddd;
+    grid-column-end: span 4;
 }
 #sectionCard{
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(12, minmax(18.75rem, 1fr));
+    grid-column: 2/span 12;
     justify-items: center;
+    gap: 20px ;
+    /* max-width: 1500px; */
+    justify-self: center;
 }
 .img{
-    width: 150px;
+    width: 50%;
     border-radius: 50%;
     margin-bottom: 16px;
     justify-self: center;
@@ -47,6 +52,9 @@ body{
   .logo{
     width: 20px;
     padding-top: 10px;
+  }
+  .a:hover{
+    cursor: url('./img/cursor2.png'), auto;
   }
   #derechos{
     text-align: center;
@@ -72,7 +80,7 @@ section > h1{
   grid-area: imagen;
 }
 .p{
-  font-size: large;
+  font-size:  medium;
 }
 .artTesti{
   display: grid;
