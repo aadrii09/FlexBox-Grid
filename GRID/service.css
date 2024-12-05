@@ -42,14 +42,11 @@ body{
     text-align: center;
   }
   #logos{
-    display: gird;
-    align-items: center;
-    justify-content: center;
+    margin-left: 45.5vw;
   }
   .logo{
     width: 20px;
     padding-top: 10px;
-    margin-left: 20px;
   }
   #derechos{
     text-align: center;
@@ -64,18 +61,54 @@ section > h1{
 .parent{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-left: 25%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20vw;
 }
 .imgTestimonios{
-  grid-row-end:auto;
-  width: 30px;
+  width: 3vw;
   border-radius: 50%;
   margin-bottom: 16px;
+  grid-area: imagen;
 }
 .p{
-  grid-row-start: auto;
+  font-size: large;
 }
 .artTesti{
   display: grid;
-justify-content: center;
+  grid-template-areas: 'imagen texto .';
+  grid-template-columns: 3vw 1fr 1fr;
+  gap: 1em;
+  width: 40vw;
+}
+
+#secttestimonios {
+  display: grid;
+  justify-items: center;
+}
+/* cabecera */
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #FFEA6E ;
+
+}
+.head{
+  font-size: 40px;
+  text-transform: uppercase; 
+  color: #B67C00; 
+  text-shadow: 
+      -2px -2px 0 #ffffff, 
+      2px -2px 0 #ffffff,
+      -2px 2px 0 #fefefe,  
+      2px 2px 0 #ffffff;  
+  letter-spacing: 3px; 
+  text-decoration: none;
+}
+.head:hover{
+  color: darkred;
+  cursor: url('./img/cursor2.png'), auto;
+}
+#navGrid{
+  margin-left:10vw;
 }
