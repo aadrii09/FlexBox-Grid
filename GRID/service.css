@@ -1,11 +1,14 @@
-body{
-    background-image: url("./img/background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: monospace;
-    cursor: url('./img/cursor.cur'), auto;
+/* Fondo con una imagen, que ocupa toda la pantalla, letra fija y cursor personalizado */
+body {
+  background-image: url("./img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: monospace;
+  cursor: url('./img/cursor.cur'), auto;
 }
-.card{
+
+/* Tarjetas con texto centrado, fondo con degradado, bordes redondeados y sombra */
+.card {
   text-align: center;
   background: linear-gradient(#FFCA2E 30%, #FFEA6E 30%);
   box-shadow: 0 0 25px rgb(35, 34, 0);
@@ -15,87 +18,120 @@ body{
   border-color: black;
   border: 1px solid #ddd;
 }
-.sectionCard{
+
+/* Contenedor de las tarjetas en cuadrícula con espacio entre ellas */
+.sectionCard {
   max-width: 1300px;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
-.img{
-    width: 50%;
-    border-radius: 50%;
-    margin-bottom: 16px;
-    justify-self: center;
-  }
-  .cardTitle{
-    font-size: 1.25rem;
-    margin: 8px 0;
-  }
-  .card-description {
-    font-size: 0.9rem;
-    color: #666;
-    margin: 8px 0;
-  }
-  main > h1{
-    text-align: center;
-  }
-  #logos{
-    text-align: center;
-  }
-  .logo{
-    width: 20px;
-    padding-top: 10px;
-  }
-  .a:hover{
-    cursor: url('./img/cursor2.png'), auto;
-  }
-  #derechos{
-    text-align: center;
-  }
-  footer{
-  background-color: #FFEA6E ;
-  margin-top: 15px;
+
+/* Imágenes redondeadas y centradas dentro de su contenedor */
+.img {
+  width: 50%;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  justify-self: center;
 }
-section > h1{
+
+/* Título de las tarjetas con tamaño grande y margen */
+.cardTitle {
+  font-size: 1.25rem;
+  margin: 8px 0;
+}
+
+/* Descripción de las tarjetas con letra pequeña y color gris */
+.card-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 8px 0;
+}
+
+/* Encabezado principal centrado */
+main > h1 {
   text-align: center;
 }
-.parent{
+
+/* Contenedor de los logos centrados */
+#logos {
+  text-align: center;
+}
+
+/* Tamaño y espaciado de los logos */
+.logo {
+  width: 20px;
+  padding-top: 10px;
+}
+
+/* Enlaces que cambian el cursor al pasar por encima */
+.a:hover {
+  cursor: url('./img/cursor2.png'), auto;
+}
+
+/* Derechos de autor con texto centrado */
+#derechos {
+  text-align: center;
+}
+
+/* Pie de página con fondo amarillo */
+footer {
+  background-color: #FFEA6E;
+  margin-top: 15px;
+}
+
+/* Títulos dentro de las secciones centrados */
+section > h1 {
+  text-align: center;
+}
+
+/* Contenedor para organizar dos columnas */
+.parent {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
   margin-left: 20vw;
 }
-.imgTestimonios{
+
+/* Imágenes redondeadas para testimonios */
+.imgTestimonios {
   width: 3vw;
   border-radius: 50%;
   margin-bottom: 16px;
   grid-area: imagen;
 }
-.p{
-  font-size:  medium;
+
+/* Párrafos con tamaño de letra mediano */
+.p {
+  font-size: medium;
 }
-.artTesti{
+
+/* Organización de testimonios en cuadrícula */
+.artTesti {
   display: grid;
   grid-template-areas: 'imagen texto .';
   grid-template-columns: 3vw 1fr 1fr;
   gap: 1em;
 }
 
+/* Sección de testimonios centrada */
 #secttestimonios {
   display: grid;
   justify-items: center;
 }
-/* cabecera */
+
+/* Barra de navegación con dos columnas */
 .navbar {
   display: grid;
-  grid-template-columns: 1fr auto; 
-  align-items: center; 
+  grid-template-columns: 1fr auto;
+  align-items: center;
   margin: 5px;
-  background-color: #FFEA6E ; 
-  
+  background-color: #FFEA6E;
 }
+
+/* Menú de navegación sin estilo de lista */
 .menu {
   list-style-type: none;
   margin: 0;
@@ -103,10 +139,12 @@ section > h1{
 }
 
 .menu li {
-  margin-left: 20px; 
+  margin-left: 20px;
   display: inline-block;
 }
-a{
+
+/* Estilo de los enlaces con letras grandes y sombra */
+a {
   text-decoration: none;
   font-size: 40px;
   text-transform: uppercase; 
@@ -116,10 +154,11 @@ a{
       2px -2px 0 #ffffff,
       -2px 2px 0 #fefefe,  
       2px 2px 0 #ffffff;  
-  letter-spacing: 3px; 
-  text-decoration: none;
+  letter-spacing: 3px;
 }
-a:hover{
+
+/* Cambia el color y el cursor en los enlaces al pasar el ratón */
+a:hover {
   color: darkred;
   cursor: url('./img/cursor2.png'), auto;
 }
