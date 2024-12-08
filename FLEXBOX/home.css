@@ -150,7 +150,7 @@ footer{
 /* Descripción de las tarjetas */
 .card-description {
   font-size: 0.9rem;
-  color: #666;
+  color: rgb(102, 102, 102);
   margin: 8px 0;
 }
 
@@ -172,7 +172,7 @@ footer{
 
 /* Estilo del botón con color de fondo y bordes */
 .button{
-  background-color:#FFF7B6 ;
+  background-color:rgb(255, 247, 182) ;
   color: rgb(0, 0, 0);
   border: none;
   padding: 8px 16px;
@@ -181,7 +181,7 @@ footer{
 
 /* Efecto hover para el botón */
 .button:hover{
-  background-color:#FFCA2E ;
+  background-color:rgb(255, 202, 46) ;
   cursor: url('./img/cursor2.png'), auto;
 }
 
@@ -194,7 +194,7 @@ footer{
   border-radius: 10px;
   margin-bottom: 30px;
   border: 1px solid #ddd;
-  background-color: rgb(255, 234, 110, 0.8) ;
+  background-color: rgba(255, 234, 110, 0.8) ;
 }
 
 /* Estilo del contenedor dentro del foro */
@@ -227,7 +227,7 @@ section > h1{
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 70%;
-  background-color:rgb(255, 247, 182) ;
+  background-color:#fff7b6 ;
 }
 
 /* Estilo del encabezado h4 dentro del formulario */
@@ -240,7 +240,7 @@ h4{
 #submit{
   height: 50px;
   width: auto;
-  background-color:rgb(255, 247, 182) ;
+  background-color:#fff7b6 ;
   align-items: center;
   margin-left: 1%;
   align-self: center;

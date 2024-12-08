@@ -148,7 +148,7 @@ a {
   text-decoration: none;
   font-size: 40px;
   text-transform: uppercase; 
-  color: #B67C00; 
+  color: rgb(182, 124, 0); 
   text-shadow: 
       -2px -2px 0 #ffffff, 
       2px -2px 0 #ffffff,
@@ -159,6 +159,6 @@ a {
 
 /* Cambia el color y el cursor en los enlaces al pasar el ratón */
 a:hover {
-  color: darkred;
+  color: rgb(139, 0, 0);
   cursor: url('./img/cursor2.png'), auto;
 }
