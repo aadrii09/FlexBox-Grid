@@ -53,6 +53,9 @@ body {
 main > h1 {
   text-align: center;
 }
+main h2{
+  text-align: center;
+}
 
 /* Contenedor de los logos centrados */
 #logos {
@@ -82,7 +85,7 @@ footer {
 }
 
 /* Títulos dentro de las secciones centrados */
-section > h1 {
+section > h2 {
   text-align: center;
 }
 

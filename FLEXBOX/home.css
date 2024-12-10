@@ -5,6 +5,8 @@ body{
   background-repeat: no-repeat;
   font-family: monospace;
   cursor: url('./img/cursor.cur'), auto;
+  margin: 0%;
+  padding: 0%;
 }
 
 /* Cabecera, estilo de distribución y color de fondo */
@@ -81,8 +83,9 @@ header{
 }
 
 /* Estilo del encabezado principal */
-main h1{
+main h2{
   text-align: center;
+  font-size: 1.5rem;
 }
 
 /* Tarjetas con un fondo de gradiente, sombra y bordes */
@@ -203,8 +206,9 @@ footer{
 }
 
 /* Estilo del encabezado dentro de las secciones */
-section > h1{
+section > h2{
   text-align: center;
+  font-size: 1.5rem;
 }
 
 /* Estilo del formulario, distribución en columna */
